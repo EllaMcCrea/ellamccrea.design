@@ -1,0 +1,137 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 7.13.2020;
+
+ * This is subpage css for moledraw
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+#
+--------------------------------------------------------------*/
+.hero {
+	background-image: url("images/Ranching-Hero.png"), linear-gradient(221deg, #FCE26A 0%, #FDA474 100%);
+	background-position: center bottom, center center;
+  background-size: contain, cover;
+	background-repeat: no-repeat;
+	height: 622px;
+  position: relative;
+}
+
+.hero .headerLine {
+  position: relative;
+  width: 660px;
+  max-width: 100%;
+  bottom: -446px;
+  z-index: 1;
+}
+
+.hero:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(254,237,232,0.00) 71%, rgba(247,186,132,0.59) 95%);
+  bottom: 0;
+  z-index: 0;
+}
+ 
+/* last color section on each page */
+.last {
+  background-image: linear-gradient(221deg, #FCE26A 0%, #FDA474 100%);
+  position: relative;
+  text-align: center;
+}
+
+/* unique page color for titles */
+figcaption,  h2,  h3 {
+  color:#F5A623;
+}
+
+.color li:before { color:#222; }
+
+.definition img {
+  z-index: 2;
+}
+
+.last .destination {
+  text-align: left;
+}
+
+.last .destination img {
+  position: absolute;
+  top: -12%;
+  width: 540px;
+  max-width: 100%;
+}
+.last .destination + img {
+    margin: 15px auto -40px;
+}
+
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+@media screen and (max-width: 1199px) {
+  .last .destination img {
+    left: 45%;
+    width: 50%;
+    top: -10vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .last .destination img {
+    position: relative;
+    top: 0;
+    width: 60%;
+    left: -8%;
+  }
+  .last .destination + img {
+    margin-top: -45vw;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 450px;
+  }
+  .hero .headerLine {
+    bottom: -280px;
+  }
+  .last { margin-top: 48px; }
+  .destination h3.headerLine {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .hero .headerLine {
+    width: 480px;
+    bottom: -360px;
+  }
+}
+
+@media screen and (max-width:  480px) {
+  .hero {
+    background-size: 117vw, cover;
+    background-position: 68% bottom, center center;
+  }
+  .hero .headerLine {
+    bottom: -390px;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .hero {
+    background-size: cover;
+    background-position: 15% bottom;
+  }
+}

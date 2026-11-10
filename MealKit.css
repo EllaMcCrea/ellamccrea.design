@@ -1,0 +1,135 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 7.13.2020;
+
+ * This is subpage css for moledraw
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+#
+--------------------------------------------------------------*/
+.hero{
+	background: linear-gradient(180deg, rgba(246,244,243,0.00) 50%, #F2E6E3 100%), url("images/MealKit-Hero.png"), linear-gradient(123deg, #FDFDFD 0%, #F3EFEE 47%, #F8E9E6 100%);
+	background-color: #F3E5E1;
+  background-position: center bottom, center 40%, center center;
+  background-repeat: no-repeat;
+  background-size: 100%, 50%, cover;
+  background-position: center;
+	background-repeat: no-repeat;
+	height: 622px;
+}
+
+.hero .headerLine {
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    bottom: -446px;
+    text-shadow: 0 0 15px rgba(255,255,255,.15);
+}
+
+
+.goal {
+  background:#F9F7F6;
+}  
+figcaption,  h2,  h4 {
+  color:#D28378;
+}
+ h3 {
+  color: #222;
+}
+
+ h4 {
+  font-size: 18px;
+  padding-top:10px;
+  line-height: 24px;
+ }
+
+ li {
+  font-size: 14px;
+  line-height: 25px;
+ }
+
+.figRow {
+      -webkit-box-align: center; 
+         -moz-box-align: center; 
+         -ms-flex-align: center; 
+    -webkit-align-items: center; 
+            align-items: center; 
+}
+
+.last {
+    margin-top: 150px;
+    position: relative;
+    background-image: radial-gradient(0% 70%, #F8F6F5 0%, #F6F1F0 14%, #F1E6E3 40%, #F4E5E0 72%);
+    min-height: 750px;
+
+  }
+.last p+p {
+  padding-bottom: 110px;
+}
+  .last .imgFooter1 {
+    position: absolute;
+    top: -20%;
+    left: calc(50vw + 10%);
+    z-index: 1;
+    width: 45%;
+    max-width: 580px;
+}
+
+
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    background-size: 100%, 60%, cover;
+  } 
+}
+
+
+@media screen and (max-width: 992px) {
+  .hero .headerLine {
+    font-size: 60px;
+    line-height: 72px;
+    bottom: -286px;
+  }
+  .headerLine {
+    width: 415px !important;
+    margin: auto !important;
+  }
+  .hero {
+    height:400px;
+  } 
+  .last p+p {
+    padding-bottom: 30px;
+  }
+  .last .imgFooter1 {
+    display: block;
+    margin: auto;
+    width: 60%;
+    min-width: 250px;
+    position: relative !important;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-size: 100%, 70%, cover;
+  }
+}
+
+/*@media screen and (max-width: 481px) {
+  .hero {
+    background-size: 100%, 70%, cover;
+  }
+}*/
+

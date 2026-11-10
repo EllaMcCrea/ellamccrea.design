@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- This is how you create notes that aren't rendered by the browser -->
+        <!-- head definitions go here -->
+        <!-- there are usually meta tags in here that are used by the search engine -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Ella McCrea Portfolio</title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="framework.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap" rel="stylesheet">
+        <!-- ^ external style sheet link -->
+    </head>
+    <body>
+      <section class="containerFluid nav-container">
+        <nav class="website-heading">
+            <h1 id="website-heading"><a href="#">Ella McCrea</a></h1>
+            <ul class="listStyleNone">
+                <li><a href="..">Work</a></li>
+                <li><a href="images/EllaMcCrea-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="mailto:lisafrank66@gmail.com?subject=I%20visited%20your%20website">Contact</a></li>
+            </ul>
+        </nav>
+      </section>
+      <main class="containerFluid">
+        <section class="portfolio-grid-basic row">
+
+          <div class="colXs6">
+            <a id="mole-draw" class="grid-item" href="molecularDrawing.html">
+              <img class="expand" src="images/MolecularDrawing.jpg" alt="">
+            </a>
+          </div>
+  <!-- Password Grid item --> 
+          <div class="colXs6 passwordProtected">
+            <div class="security">
+              <input id='password' type='text' placeholder="Enter Password..." onkeypress="handleKeyPress(event)"/>
+              <script>
+                  function validatePass(){
+                      if(document.getElementById('password').value == 'Validus'){
+                          window.location.href = "Compliance.html"; // Redirect on correct password
+                          return false; // Prevent default link behavior
+                      }else{
+                          alert('incorrect password, contact author');
+                          return false; // Stay on the page for incorrect password
+                      }
+                  }
+
+                  function handleKeyPress(event) {
+                    if (event.key === 'Enter') {
+                      validatePass(); // Call validatePass function when Enter is pressed
+                    }
+                  }
+              </script>
+            </div>
+            <a id="compliance" class="gradient-overlay grid-item" href="Compliance.html" onclick="javascript:return validatePass()">
+               <img class="expand" src="images/Compliance.png" alt="">
+            </a>  
+          </div>
+    <!-- End Password Grid item --> 
+          <div class="colXs6">
+            <a id="scheduler" class="grid-item" href="scheduler.html">
+              <img class="expand" src="images/Scheduler.jpg" alt="">
+            </a>
+          </div>
+          <div class="colXs6">
+            <a id="bafs" class="grid-item" href="BAFS.html">
+              <img class="expand" src="images/Bafs.jpg" alt="">
+            </a>
+          </div>
+          <div class="colXs6">
+            <a id="audit-analytics" class="grid-item" href="auditAnalytics.html">
+              <img class="expand" src="images/AuditAnalytics.jpg" alt="">
+            </a>
+          </div>
+          <div class="colXs6">
+            <a id="roam" class="grid-item" href="Ranching.html">
+              <img class="expand" src="images/Roam.jpg" alt="">
+            </a>
+          </div>
+          <div class="colXs6">
+            <a id="heb" class="grid-item" href="MealKit.html">
+              <img class="expand" src="images/HEB.jpg" alt="">
+            </a>
+          </div>
+        </section>
+      </main>
+      
+      <footer class="containerFluid">
+        <section class="row">
+          <div class="colXs12 text-center"><small class="text-center">&copy; 2020 Ella McCrea</small></div>
+        </section>
+      </footer>
+            
+        <!-- the content goes here -->
+        <script src=""></script> <!-- java script and other things are usually added either at the end of the webs page like this or they are added in at the top with the link elements -->
+    </body>
+</html>

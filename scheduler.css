@@ -1,0 +1,191 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 7.13.2020;
+
+ * This is subpage css for scheduler
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+#
+--------------------------------------------------------------*/
+.hero{
+  background: linear-gradient(to top, rgba(232,233,240,0.25), rgba(232,233,240,0)), url("images/scheduler-hero.png"), #E8E9F0;
+  background-color: #E8E9F0; 
+  background-position: center bottom, center 40%, center center;
+  background-repeat: no-repeat;
+  background-size: 100% 300px, auto, cover;
+  height: 622px;
+}
+
+.hero .headerLine {
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+  bottom: -446px;
+  text-shadow: 0 0 15px rgba(255,255,255,.15);
+}
+   
+figcaption,  h2,  h3 {
+  color:#3E9DFE;
+}
+
+.color li {
+  font-style: italic;
+}
+.color li:before { color: #7bf5f6; }
+.color li:nth-child(2):before { color: #23c4ff; }
+.color li:nth-child(3):before { color: #3e99f9; }
+.color li:nth-child(4):before { color: #b3c4ff; }
+
+.scheduler .last {
+  margin-top: 100px;
+  background: linear-gradient(151deg, #409DFE 0%, #2C78CE 19%, #3551A4 87%);
+}
+
+.last, 
+.last .imgFooter2 {
+  position: relative;
+}
+
+.last .imgFooter1 {
+  position: absolute;
+  top: -5%;
+  left: calc(50vw + 10%);
+  z-index: 1;
+}
+.last .imgFooter2 {
+  z-index: 3;
+  margin: 45px 15px 60px;
+  box-shadow: 0 0 64px rgba(15, 36, 97, 0.75);
+  border-radius: 24px;
+  max-width: calc(100% - 30px);
+}
+
+.last .destination::before, 
+.last .destination::after {
+  display: inline-block;
+  background-color: #2e6abf;
+  color: white;
+  font: bold 52px/1.48 'Nunito Sans', 'Avenir Next', Helvetica, Arial, Verdana, sans-serif !important;
+  z-index: 5;
+  width: 20vw;
+  position: absolute;
+  padding: 12px 32px;
+  box-shadow: 0 4px 36px rgba(0,0,0,0.15)
+}
+.last .destination::before {
+  content: 'Before\00a0...';
+  right: 0;
+  top: 250px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  z-index: 2;
+}
+.last .destination::after {
+  content: 'After\00a0...';
+  left: 0;
+  bottom: 120px;
+  text-align: right;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+@media screen and (min-width: 1600px) {
+  .last .destination::after { width: calc(50vw - 200px); }
+}
+@media screen and (max-width: 1600px) {
+  .last .destination::before, 
+  .last .destination::after {
+    width: 30vw;    
+ }
+}
+
+@media screen and (max-width:1200px) {
+  .last .imgFooter1 {
+    max-width: 75vw;
+    top: -3.5%;
+  }
+}
+
+@media screen and (max-width: 1083px) {
+  .last .imgFooter2 {
+    border-radius: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .scheduler .hero { 
+    background-size: 100% 200px, 135%, cover; 
+  }
+  .last .imgFooter1 {
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    left: 20%;
+    margin-bottom: -40%
+  }
+  .last .destination::before, 
+  .last .destination::after {
+    width: 350px;
+  }
+  .last .destination::before {
+    top: auto;
+    bottom: 85vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scheduler .hero {
+    height: 450px;   
+  }
+  .hero .headerLine {
+    bottom: -280px;
+  }
+  .scheduler .last { margin-top: 48px; }
+  .last .destination::before, 
+  .last .destination::after {
+    font-size: 36px !important;
+    width: 250px;
+  }
+  .last .destination::before {
+    bottom: 90vw;
+  }
+  .destination h3.headerLine {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .scheduler .hero { 
+    background-image: linear-gradient(to top, rgba(232,233,240,0.45), rgba(232,233,240,0)), url("images/scheduler-hero.png");
+  }
+  .hero .headerLine {
+    width: 500px;
+    bottom: -360px;
+  }
+}
+
+@media screen and (max-width:  480px) {
+  .scheduler .hero {
+    background-size: 100% 200px, 175%, cover;
+  }
+  .hero .headerLine {
+    bottom: -390px;
+  }
+  .last .destination::before, 
+  .last .destination::after {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+

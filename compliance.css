@@ -1,0 +1,245 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 4.05.2023;
+
+ * This is subpage css for compliance
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+--------------------------------------------------------------*/
+.compliance .hero {
+  background-image: url("images/Compliance-Hero.png"), linear-gradient(-45deg, #b4deff, #5849ff);
+  background-position: calc(50% + 3vw) calc(100% + 7vw), center center;
+  background-size: 100vw, cover;
+  background-repeat: no-repeat;
+  height: 622px;
+}
+
+.compliance h1.headerLine {
+    width: 861px;
+    position: relative;
+    bottom: -446px;
+    text-shadow: 0px 4px 50px #ffffff;
+}
+.compliance figcaption em, .compliance h2, .compliance h3 {
+  color:#3F55FA;
+}
+.compliance figcaption {
+ color: #5B688B;
+}
+.compliance figcaption em{
+  font-style: normal;
+}
+.compliance figcaption strong {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+}
+.compliance .goal {
+  background: #eff2fc;
+}
+
+.icon {line-height: 0; }
+.icon small, .research li { 
+  color: #5B688B;
+  font-size: 13px; 
+  line-height: 18px;
+}
+
+.icon h4 { margin: 26px 0 7px; padding-bottom: 0; }
+.icons.grid { 
+  margin: 34px 0 85px; 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.strategy figure { text-align: center; }
+.strategy figcaption { text-align: left; margin-left: 4%; }
+
+.strategy .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 15px;
+  justify-content: space-between;
+}
+.strategy .grid p { 
+  grid-column: 1 / span 7;
+}
+.strategy .grid figure { 
+  margin-top: -60px;
+  grid-column: 8 / span 5;
+  grid-row: 1 / span 3;
+}
+
+.research ul { line-height: 0; margin-top: -5px; }
+.research li { margin-bottom: 17px; }
+.research figcaption {
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.research figure img { width: 150px; }
+
+.compliance .last {
+  background: #0a1239;
+  color: #fff;
+  background-image: url("images/Compliance-EventusBG.png");
+  background-position: center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+}
+
+.compliance .last .headerLine { 
+  margin: 70px auto 50px; 
+  color: #fff;
+  max-width: 100%;
+}
+.compliance .last .statistics {
+  width: 480px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.compliance .last .statistics li:nth-child(2) {
+  max-width: 120px;
+}
+.compliance .last .statistics li:nth-child(3){
+  max-width: 175px;
+}
+.compliance .last .statistics .lg {
+  font-size: 40px;
+}
+.compliance .last .quote { 
+  padding: 50px 0; 
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  justify-content: flex-end;
+}
+.compliance .last .quote img {
+  width: 60px;
+  margin: 0;
+  margin-right: 30px;
+}
+.compliance .last .quote blockquote, .compliance .last .quote .source { width: calc(100% - 106px); max-width: 100%; }
+.compliance .source { padding: 30px 0; }
+
+.graphics.layered {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.graphics.layered video {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  top: 0;
+  border: 15px solid white;
+  border-radius: 4px;
+  box-shadow: -6px 5px 30px #658aa82b;
+}
+.graphics.layered img {
+  width: 55%;
+  margin-top: 36px;
+  border: 15px solid white;
+  box-shadow: 14px 5px 30px #e7f1f9;
+
+}
+
+.compliance .last {
+  background-image: url("images/Compliance-FooterUI.png"), url("images/Compliance-EventusBG.png");
+  background-position: 100% 100%, center;
+  background-size: 40%, cover;
+}
+.compliance .last img.transparent { opacity: 0; }
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+@media screen and (min-width:1200px) {
+  .research .colLg3:first-of-type { margin-left: 50px; }
+  .compliance .hero {
+    background-position: calc(50% + 34px) calc(100% + 90px), center center;
+    background-size: 1250px, cover;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .research .questions, .research .questions figure {
+    display: flex;
+  }
+  .research .questions figure {
+    flex-wrap: wrap;
+  }
+  .research .questions figure img {  
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width:991px) {
+  .strategy .grid p { 
+    grid-column: 1 / span 12;
+  }
+  .strategy .grid p:first-child { 
+    grid-column: 1 / span 6;
+  }
+  .strategy .grid figure { 
+    margin-top: -10px;
+    grid-column: 7 / span 6;
+  }
+}
+@media screen and (max-width: 767px) {
+  .compliance .hero {
+    height: 450px;
+    background-size: contain, cover;
+    background-position: calc(50% - 5px) calc(100% + 1px), center center;        
+  }
+  .compliance h1.headerLine {
+    bottom: -280px;
+  }
+  .icons.grid { grid-template-columns: repeat(2,1fr); }
+}
+@media screen and (min-width:481px) and (max-width: 767px) {
+  .research .questions, .research .questions figure { 
+    display: flex;
+    width: 100%;
+  }
+  .research .questions figure {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .research .questions figure img {  
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .compliance h1.headerLine {
+    bottom: -360px;
+  }
+  .strategy .grid figure { margin: 0; }
+}
+
+@media screen and (max-width:  480px) {
+  .compliance h1.headerLine {
+    bottom: -390px;
+  }
+  .strategy .grid p:first-child, .strategy .grid figure { 
+    grid-column: 1 / span 12;
+  }
+  .strategy .grid figure { grid-row: 3; }
+  .research .questions { width: 375px; max-width: 100%; }
+}
+
+@media screen and (max-width: 360px) {
+  .compliance .hero {
+    background-size: calc(100vw + 120px), cover;
+  }
+}

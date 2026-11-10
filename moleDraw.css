@@ -1,0 +1,98 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 7.13.2020;
+
+ * This is subpage css for moledraw
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+#
+--------------------------------------------------------------*/
+.moledraw .hero {
+  background-image: url("images/Moledraw1.png"), linear-gradient(45deg, rgba(160,107,254,1) 0%, rgba(210,101,255,1) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 622px;
+}
+
+.moledraw h1.headerLine {
+    width: 861px;
+    position: relative;
+    bottom: -446px;
+}
+.moledraw figcaption, .moledraw h2, .moledraw h3 {
+  color:#AD69FE;
+}
+
+.barCharts figcaption{
+  color:#222;
+  padding-bottom:5px;
+}
+
+.barCharts img {
+  max-width:100%; 
+  }
+.barCharts legend div{position: relative; font-size: 13px;}
+.barCharts legend div:before{
+  content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #CB66FF;
+    position: relative;
+    margin-right: 10px;
+}
+.barCharts legend div:nth-child(2) {top: -26px;}
+.barCharts legend div:nth-child(2):before{ background: #39019A;}
+.barCharts legend div:nth-child(3) {top:-52px;}
+.barCharts legend div:nth-child(3):before{ background: #A06BFE;}
+
+.color-quote path {
+    fill: #AD69FE;
+}
+
+#moleDrawGif {
+    padding: 0;
+    outline: 1px solid #ddd;
+    outline-offset: -1px;
+}
+
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .moledraw .hero {
+    height: 450px;
+    background-size: contain, cover;
+    background-position: calc(50% - 5px) calc(100% + 1px), center center;        
+  }
+  .moledraw h1.headerLine {
+    bottom: -280px;
+  }
+}
+
+
+@media screen and (max-width: 599px) {
+  .moledraw h1.headerLine {
+    bottom: -360px;
+  }
+}
+
+@media screen and (max-width:  480px) {
+  .moledraw h1.headerLine {
+    bottom: -390px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .moledraw .hero {
+    background-size: calc(100vw + 120px), cover;
+  }
+}

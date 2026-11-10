@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- This is how you create notes that aren't rendered by the browser -->
+        <!-- head definitions go here -->
+        <!-- there are usually meta tags in here that are used by the search engine -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Ella McCrea Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="compliance.css">
+        <!-- <link rel="stylesheet" href="framework.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap" rel="stylesheet">
+        <!-- ^ external style sheet link -->
+    </head>
+    <body class="compliance">
+      <section class="containerFluid nav-container">
+        <nav class="website-heading">
+            <h1 id="website-heading"><a href="index.html">Ella McCrea</a></h1>
+            <ul class="listStyleNone">
+                <li><a href="..">Work</a></li>
+                <li><a href="images/EllaMcCrea-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="mailto:lisafrank66@gmail.com?subject=I%20visited%20your%20website">Contact</a></li>
+            </ul>
+        </nav>
+      </section>
+      
+    <div class="hero containerFluid">
+	      	<section class="row textCenter">
+	      		<h1 class="headerLine"><span class="left">Trading </span><span class="right">Surveillance</span></h1>
+	      	</section>
+	</div>
+	<main class="container">
+      	<section class="row background">
+      		<h2 class="colXs12 colMd10 colMdOffset1">Project Background</h2>
+      		<p class="colXs12 colMd10 colMdOffset1">Validus, a leading trade surveillance platform, empowers compliance officers to monitor and enforce regulations against market manipulation. It supports trading desks, enhances compliance teams' capabilities, and streamlines audit functions with real-time monitoring and customizable reporting. Catering to a wide range of clients, including exchanges, banks, and broker-dealers across various asset classes&mdash;equities, options, futures, and digital assets&mdash;Validus plays a critical role in maintaining the safety and integrity of financial markets.</p>
+			<p class="colXs12 colMd10 colMdOffset1">With the financial landscape rapidly evolving, Validus faced increased competition from rivals offering more modern solutions. The platform, burdened by 15 years of accumulated design and technical debt while reliant on an outdated, non-standard frontend code (dojo), struggled to keep pace with market demands. This legacy architecture not only made maintenance significantly difficult but also presented a major hurdle in hiring new developers, as finding individuals with Dojo expertise was virtually impossible, requiring substantial training for anyone joining the team. Moreover, a transition to Angular promised a tenfold reduction in code volume for similar features, boosting both scalability and maintainability.</p>
+      	</section>
+      	<section class="row text-center goal">
+      		<h3 class="colXs12 colMd8 colMdOffset2">Our Goal:</h3>
+      		<p class="colXs12 colMd8 colMdOffset2 lg">Create a more marketable, scalable, and maintainable app for the business while improving usability for the end-user through core jobs to be done.</p>
+	      </section>
+	      <section class="row definition">
+      		<h2 class="colXs12">Definition</h2>
+      		<p class="colXs12">Redesigning an entire application is a formidable challenge that requires meticulous planning and execution. It involves navigating through technical complexities, adapting organizational structures, and ensuring effective prioritization, resource, and timeline management to keep the project on track. Seamless integration with existing systems is crucial to maintain backward compatibility. But how and where did we begin?</p>
+      	<ul class="colXs12 grid icons listStyleNone">
+      		<li class="icon">
+      			<img src="images/Compliance-UserSat.svg" alt="">
+      			<h4>User Satisfaction</h4>
+      			<small>Preserving or enhancing user experience and functionality was crucial for ensuring user satisfaction &amp; adoption.</small>
+      		</li>
+      		<li class="icon">
+      			<img src="images/Compliance-Integration.svg" alt="">
+      			<h4>Integration W/Existing Systems</h4>
+      			<small>Required deep technical understanding of the app's workings, database, and APIs.</small>
+      		</li>
+      		<li class="icon">
+      			<img src="images/Compliance-Org.svg" alt="">
+      			<h4>Organizational Adaptations</h4>
+      			<small>Significant adjustments within the organization, affected processes, roles, and responsibilities.</small>
+      		</li>
+      		<li class="icon">
+      			<img src="images/Compliance-roadmap.svg" alt="">
+      			<h4>Resource &amp; Timeline Management</h4>
+      			<small>Effective resource allocation and strict adherence to timelines were vital for the project's success.</small>
+      		</li>
+      	</ul>
+      	</section>
+      	<section class="row strategy">
+      		<h3 class="colXs12">Strategy (building the right thing)</h3>
+      		<div class="grid colXs12">
+	      		<p>Despite the original app taking 15 years to build, our timeframe was, understandably, much shorter. I implemented a usage data monitoring application as a crucial piece to our successful starting strategy. For the first time, we could gather in-depth insights into how our users interacted with our app in real time. We accurately mapped user workflows, pinpointed which features were most utilized, and importantly, identified underperforming areas.</p>
+	      		<p>This tracking enabled us to apply the Pareto Principle &mdash; 20% of features drove 80% of user engagement. However, we recognized that data alone couldn't paint the full picture. It could signal where problems lay but not why they existed. Therefore, we complemented our quantitative analysis with qualitative research to delve deeper into user behaviors and needs.</p>
+	      	<figure>
+	      		<img src="images/Compliance_Features_Clicks.png" alt="">
+	      		<figcaption><strong>Top 9%</strong> (14 of 321 features)</figcaption>
+	      	</figure>
+	      	</div>
+	      	<p class="colXs12">To further refine our understanding, I embraced the Jobs to Be Done (JTBD) framework. This approach shifted our focus from merely tweaking the existing product to understanding the core tasks and needs of our customers. Through 13 moderated interviews, we explored users' daily activities, identifying key jobs, the time spent on them, and their primary needs and workflows. The dual approach of quantitative data from the usage monitoring application and qualitative insights from JTBD interviews provided a comprehensive view of our user base. It enabled us to make informed decisions on feature prioritization and design directions, setting the stage for a user-centered redesign of the application.</p>
+			<p class="colXs12">Armed with these insights, I engaged stakeholders and the wider company in setting a roadmap for feature development. This process wasn't just about deciding what to build but understanding our users at a fundamental level, ensuring that every feature we decided to include or enhance was rooted in real user needs and behaviors. As a result, our redesign efforts were deeply informed by a blend of data-driven and user-centric research, ensuring that we were not just creating a new version of the app but one that was finely tuned to the demands and workflows of our users.</p>
+					<img src="images/Compliance-J2BD.png" alt="">
+				</section>
+				<section class="row success">
+      		<h3 class="colXs12">End-to-End Success</h3>
+      		<p class="colXs12">I steered our teams through a comprehensive redesign process, centered around reimagining the application&rsquo;s job flows. This involved creating prototypes and conducting task tests to validate our designs. That we designed with and not for our users. This phase was highly collaborative, involving key stakeholders and at least one tech lead from the outset to ensure that our plans were grounded in technical feasibility and aligned with business goals.</p>
+      	</section>
+      	<section class="row research">
+      		<div class="colXs12 colSm6 colMd4 colLg5">
+      				<p>Example research results:</p>
+      				<ul class="listStyleNone">
+								<li><strong>7/7</strong> participants found the bubble chart from the scatterplot</li>
+								<li><strong>6/7</strong> understood that the size of the bubble represented account volume</li>
+								<li><strong>5/7</strong> understood the &ldquo;Bubble Size By:&rdquo; toggle</li>
+							</ul>
+      			</div>
+                <div class="questions">
+      			<figure class="colXs12 colSm6 colLg3">
+      				<figcaption>Compared to what you currently use, <em>how efficient was the visualizer we reviewed today?</em></figcaption>
+      				<img src="images/Compliance-efficient.png" alt="">
+      			</figure>	
+      			<figure class="colXs12 colSm6 colLg3">
+      				<figcaption>Compared to what you currently use, <em>how easy was the visualizer we reviewed today?</em></figcaption>
+      				<img src="images/Compliance-easy.png" alt="">
+      			</figure>
+                </div>		
+      		</div>
+      	</section>
+      	<section class="row success">
+      		<p class="colXs12">Adopting agile scrum methodologies, I steered the end-to-end development of these designs, emphasizing flexibility, team collaboration, and rapid iterations. This approach ensured that we remained responsive to feedback and could adapt swiftly to emerging challenges or insights.</p>
+			<p class="colXs12">A successful beta launch requires a solid communication strategy. Previously reliant on PDF manuals and email for user assistance, I introduced a significant shift towards more interactive and user-friendly support methods. By implementing in-app guides and establishing a help center, we created a dynamic environment where users could easily find, share, and update information. Ensuring users had the help they needed at their fingertips, thereby significantly enhancing their overall experience.</p>
+        </section>
+        <section class="graphics layered">
+            <img src="images/Compliance-Help.png" alt="">
+            <video poster="images/Compliance_Video_Poster.png" preload>
+                <source src="images/Compliance-video1.mp4" type="video/mp4" />
+            </video>
+        </section>
+            
+      	</section>
+      	<section class="row video text-center">
+                <video playsinline width="800px" height="auto" class="layeredVid" poster="" >
+                    <source src="images/Compliance-video2.mp4" type="video/mp4" />
+            </video>
+      	</section>
+      </main>
+      <section class="containerFluid last">
+      	<div class="row destination">
+      		<h3 class="headerLine"><span class="left">The</span><span class="right">Destination</span></h3>
+      		<div class="colXs10 colSm6">
+      			<ul class="statistics listStyleNone flex">
+      				<li><span class="lg"><strong>83</strong>%</span><br/>adoption rate</li>
+      				<li><span class="lg"><strong>80</strong>%</span><br/>found new app easier to use</li>
+      				<li><span class="lg"><img src="images/Compliance-arrow.svg" alt=""><strong>2</strong> years</span><br/>entire app launched under my leadership</li>
+      			</ul>
+      			<div class="quote flex">
+		      		<img src="images/Compliance-quote.svg" alt="quotation decoration">
+		      		<blockquote><strong>I'd say the newer one definitely makes me feel a little less overwhelmed, but way more efficient and being able to understand what's going on, if that makes sense.</strong></blockquote>
+		      			<p class="source">Current Client</p>
+		      	</div>
+      		</div>
+      		<img class="colXs6 colXsOffset3 colSm4 colSmOffset1 transparent" src="images/Compliance-FooterUI.png" alt="gif of working prototype">
+      	</div>
+      </section>
+
+      <footer class="containerFluid">
+        <section class="row">
+          <div class="colXs12 text-center"><small class="text-center">&copy; 2020 Ella McCrea</small></div>
+        </section>
+      </footer>
+    </body>
+  </html>

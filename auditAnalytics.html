@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- This is how you create notes that aren't rendered by the browser -->
+        <!-- head definitions go here -->
+        <!-- there are usually meta tags in here that are used by the search engine -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Ella McCrea Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="auditAnalytics.css">
+        <!-- <link rel="stylesheet" href="framework.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap" rel="stylesheet">
+        <!-- ^ external style sheet link -->
+    </head>
+    <body class="auditAnalytics">
+      <section class="containerFluid nav-container">
+        <nav class="website-heading">
+            <h1 id="website-heading"><a href="index.html">Ella McCrea</a></h1>
+            <ul class="listStyleNone">
+                <li><a href="..">Work</a></li>
+                <li><a href="images/EllaMcCrea-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="mailto:lisafrank66@gmail.com?subject=I%20visited%20your%20website">Contact</a></li>
+            </ul>
+        </nav>
+      </section>
+      
+    <div class="hero containerFluid">
+	      	<section class="row textCenter">
+	      		<h1 class="headerLine"><span class="left">Audit</span><span class="right">Analytics</span></h1>
+	      	</section>
+	</div>
+	<main class="container">
+      	<section class="row background">
+      		<h2 class="colXs12 colMd8 colMdOffset2">Project Background</h2>
+      		<p class="lg colXs12 colMd8 colMdOffset2">Business Tax regulations are incredibly complex, and many taxes are leveraged through self-reporting. Because this environment fosters non-compliance, collection agencies use audits to impose education, compliance, and revenue recovery.</p>
+      		<p class="colXs12 colMd8 colMdOffset2">However, most collection agencies are only able to audit between 1 – 2% of all accounts. Of this small percentage, most audit candidates are chosen through a lottery system, which fails to account for industry trends and abnormalities in reporting behavior. To analyze such data can be a painstaking process of digging through individual accounts' paper records, which is why such analysis often doesn't take place.</p>
+      	</section>
+      	<section class="row text-center goal">
+      		<h3 class="colXs12 colMd8 colMdOffset2">Our Goal:</h3>
+      		<p class="colXs12 colMd8 colMdOffset2 lg">Empower the auditing process by combining data from multiple systems to get a holistic picture, not just the pieces, and in turn produce larger yields on revenue recovery.</p>
+      </section>
+      <section class="definition">
+        <div class="row">
+      		<h2 class="colXs12">Definition</h2>
+      		<p class="colXs12 colSm6">One challenge this project faced was the variety of software and paper filings solutions used by different collection agencies. After researching the most commonly used systems and sorting through the paper filings, we deduced that four different APIs must be written.
+          </p>
+      		<p class="colXs12 colSm6">Another complication the project faced was the structure of the agencies themselves. In some states, all taxes are not collected on a statewide level but a county/parish level, which means that there are many different collection agencies. Resulting in siloed databases, which is unfortunate as being able to compare them, would aid immensely in finding account discrepancies & delinquent accounts. </p>
+        </div> <!-- end row -->
+        <div class="row">
+        			<img class="text-center Pad40 PadB40 colXs12  colXsOffset0 colMd10 colMdOffset1" src="images/AuditAnalytics-Flow.png" alt="technical design">
+      	</div>
+
+        <section>
+          <div class="row">
+              <h2 class="colXs12 colMd8 colMdOffset2">Design, Test, Iterate</h2>
+              <p class="colXs12 colMd8 colMdOffset2">Our company's position in the government sphere aided us with insight and reach into the collection industry.</p>
+
+              <p class="colXs12 colMd8 colMdOffset2 lg">Five onsite interviews at different collections agencies revealed that while systems may vary, the pain points amongst them did not. Each agency's most arduous tasks and processes were a direct result of poor access to their collections data.</p>
+          </div> <!-- end row -->
+          <div class="row">
+                <img class="text-center Pad40 PadB40 colXs12" src="images/AuditAnalytics-Flow2.png" alt="project flow">
+          </div> <!-- end row -->
+          <div class="row">
+               <p class="colXs12 colMd8 colMdOffset2 lg"> Next, I managed a small team to develop a beta/demo version of our software, that integrated the previously inaccessible, non-aggregated data stores into a data warehouse. Leveraging web graphing tools (D3 and DC ) to visualize this information for our users. The team presented this demo at several conferences to gauge both interest and areas for improvement. We took this feedback and made adjustments to the software. </p>
+
+          </div> <!-- end row -->
+        </section>
+      </main>
+
+      <section class="containerFluid last">
+      		<div class="destination row">
+        		<div class="colXs12 colSm8 colSmOffset2 colMd6 colMdOffset0">
+        				<h3 class="headerLine"><span class="left">The</span><span class="right">Destination</span></h3>
+  		      			<p class="white Pad40">
+                    The trends dashboard features interactive mapping of large-scale trends, which sample all accounts.
+                  </p>
+                  <p class="white">
+                    From trends, users can pin outlier accounts. Pinned groups are then used on the groups dashboard, which uses specific return detail of all accounts. 
+                  </p>
+                  <p class="white">
+                    By navigating to the account page, a user can examine individual accounts and compare filing history.
+                  </p>
+                  <p class="white"> 
+                    The fourth "merge" dashboard of the application lists the findings of a direct comparison between the parish's accounts and that of the state's, alerting the auditor to any possible missed filings.
+                  </p>
+  		      </div>
+            <img src="images/AuditAnalytics-Footer1.png" alt="final app">
+      		</div> <!-- end row -->
+          
+          <div class="row">
+            <img class="colXs12 Pad40" src="images/AuditAnalytics-Footer2.png" alt="final app">
+            <p class="colXs12 colMd8 colMdOffset2 white Pad40 PadB40">As a manager, our team delivered on several tight deadlines with slim resources. I am convinced that this was a direct result of the positive collaborative team I was able to foster. I could see the impact this made on my teammates by their increased level of engagement. A team member on this project mentioned to me how much happier they were in the workplace. From a design standpoint, I can say that the product did not sacrifice features for quality. We hit our mark on this project for market fit, design quality, teamwork, feasibility, and on all on a tight deadline.</p>
+          </div> <!-- end row -->
+      	</div>
+      </section>
+      <footer class="containerFluid">
+        <section class="row">
+          <div class="colXs12 text-center"><small class="text-center">© 2020 Ella McCrea</small></div>
+        </section>
+      </footer>
+    </body>
+  </html>

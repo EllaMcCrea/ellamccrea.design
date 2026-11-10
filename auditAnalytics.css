@@ -1,0 +1,123 @@
+/*
+Project: Ella McCrea Portfolio Website;
+Description: Standard reset, framework, and global site styles;
+Author: Ella McCrea & Paul Capetola;
+Version: 7.13.2020;
+
+ * This is subpage css for moledraw
+ */
+/* ================================================================================================== */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1.0.0 - Color, Sizing, specific 
+#
+--------------------------------------------------------------*/
+.hero {
+	background-image: url("images/AuditAnalytics-Hero.png"),url("images/AuditAnalytics-Hero1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+  background-size: auto, cover;
+	height: 622px;
+  position: relative;
+}
+
+.hero .headerLine {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  bottom: -446px;
+  z-index: 1;
+}
+
+/* layer between text and bk image*/
+.hero:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(82,97,210,0.00) 65%, #6A75F0 100%);
+  bottom: 0;
+  z-index: 0;
+}
+ 
+/* last color section on each page */
+.last {
+  background-image: linear-gradient(159deg, #6A76EF 0%, #5764D6 41%, #3C46A4 88%);
+  position: relative;
+}
+/* unique page color for titles */
+figcaption, h2, h3 {
+  color:#5A67E3;
+}
+
+/* Headline specific sizing if you need it 
+.BAFS h1.headerLine {
+    width: 861px;
+    position: relative;
+    bottom: -446px;
+}
+*/ 
+.last .destination {
+  position: relative;
+}
+
+.last .destination img {
+  position: absolute;
+  bottom: 0;  
+  left: 54%;
+  width: 775px;
+  max-width: 100%;
+}
+.last img:first-child {
+  margin: 15px auto;
+}
+
+
+/*--------------------------------------------------------------
+#2.0.0 - Media Specific 
+--------------------------------------------------------------*/
+@media screen and (max-width: 991px) {
+  .hero {
+    background-position: 5% center, center center;
+  }
+  .last .destination img {
+    display: block;
+    position: initial;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 450px;
+    background-size: 135vw, cover;
+    background-position: 12% center, center center;
+  }
+  .hero .headerLine {
+    bottom: -280px;
+  }
+  .last { margin-top: 48px; }
+  .destination h3.headerLine {
+    margin-top: 60px;
+  }
+  .last img:first-child { padding-top: 15px; }
+}
+
+@media screen and (max-width: 599px) {
+  .hero .headerLine {
+    width: 480px;
+    bottom: -360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .last .destination img { padding-top: 15px; }
+  .last .row:last-child p:last-child { padding-top: 10px; }
+}
+
+
+/* Type on smaller screens  */ 
